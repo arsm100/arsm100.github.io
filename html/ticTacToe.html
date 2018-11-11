@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/Tic Tac Toe.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body onload="">
+<h1>Tic Tac Toe Game:</h1>
+<div id="scores"> <h3>Score Board</h3>
+    <div id="player1">
+Player 1
+    </div>
+    <div id="player2">
+Player 2
+    </div>
+    <div id="tie">
+Tie
+    </div>
+</div>
+<div id="buttons">
+    <div>
+        <button onclick="restartGame()" id="restart">Restart Current Game</button>
+    </div>
+    <div>
+        <button id="reset"><a href="">Reset Scores</a></button>
+    </div>
+    <div id="selector">
+        <div>2 Players</div>
+        <!-- Rectangular switch -->
+        <label class="switch">
+            <input id="mode" type="checkbox">
+            <span class="slider"></span>
+        </label>
+        <div>1 Player</div>
+        <br>
+        <br>
+        <div class="comment hidden">PLEASE CLICK ON THE GRID AFTER YOUR TURN TO SHOW CPU MOVE</div>
+    </div>
+
+</div>
+<div id="game-container">
+    <table id="grid">
+        <tr>
+            <td id="1"></td>
+            <td id="2"></td>
+            <td id="3"></td>
+        </tr>
+        <tr>
+            <td id="4"></td>
+            <td id="5"></td>
+            <td id="6"></td>
+        </tr>
+        <tr>
+            <td id="7"></td>
+            <td id="8"></td>
+            <td id="9"></td>
+        </tr>
+    </table>
+    <script src="../js/ticTacToe.js"></script>
+</div>
+</body>
+</html>
